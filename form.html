@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nates Resturant</title>
+</head>
+<body>
+    <h1>Nates Resturant</h1>
+    <h2>Dinner order </h2>
+
+    <p></p>
+
+    <table>
+      <thead>
+          <tr>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tueday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+      </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+        <td>Closed</td>
+        <td>12:00-3:00Pm</td>
+        <td>12:00-3:00Pm</td>
+        <td>12:00-3:00Pm</td>
+        <td>12:00-3:00Pm</td>
+        <td>12:00-3:00Pm</td>
+        <td>Closed</td>
+    </tr>
+
+    <tr>
+        	<td colspan=”7”>Fall 2021 hours through Dec. 1, 2021</td>
+    </tr>
+</tbody>
+    </table>
+
+    <form name="dinner-option" method="POST" data-netlify="true">
+
+        <fieldset>
+           <legend>Customer Information</legend> 
+
+           <label for="firstName">First Name</label><br>
+           <input type="text" id="firstName" required="required" placeholder="First Name" autofocus><br>
+
+           <label for="lastname">Last Name</label><br>
+           <input type="text" id="lastName" required="required" placeholder="Last Name"><br>
+
+           <label for="email">Email</label><br>
+           <input type="text" id="email" required="required" placeholder="Email"><br>
+           
+           <label for="phone">Phone Number</label><br>
+           <input type="text" id="phoneNumber" required="required" placeholder="Phone Number">
+
+           <p>Delivery Method</p>
+            <label for="to-go">Take out</label>
+           <input type="radio" name="delivery" id="delivery" value="to-go">
+
+           <label for="deliver-to">Deliver</label>
+           <input type="radio" name="delivery" id="delivery" value="deliver-to">
+
+           <label for="eat-in">Eat in</label>
+           <input type="radio" name="delivery" id="delivery" value="eat-in">
+        
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Food Choices</legend>
+
+            <h3>Monday</h3>
+            <input type="radio" id="macncheese" name="choice" value="macncheese">
+            <label for="macncheese">Mac and Cheese</label><br>
+            <input type="radio" id="pizza" name="choice" value="pizza">
+            <label for="pizza">Pizza</label><br>
+
+            <h3>Tueday</h3>
+            <input type="radio" id="hamcheese" name="choice" value="hamcheese">
+            <label for="hamcheese">Ham and Cheese sandwhich</label><br>
+            <input type="radio" id="grillcheese" name="choice" value="grillcheese">
+            <label for="grillcheese">Grilled Cheese</label><br>
+
+            <h3>Wednesday</h3>
+            <input type="radio" id="fish" name="choice" value="fish">
+            <label for="fish">Fish</label><br>
+            <input type="radio" id="cerel" name="choice" value="cerel">
+            <label for="cerel">cerel</label><br>
+
+            <h3>Thursday</h3>
+            <input type="radio" id="goldfish" name="choice" value="goldfish">
+            <label for="goldfish">Goldfish (yes like the cracker im very picky)</label><br>
+            <input type="radio" id="tacos" name="choice" value="tacos">
+            <label for="tacos">Moms favorite tacos</label><br>
+
+            <h3>Friday</h3>
+            <input type="radio" id="ice-cream" name="choice" value="ice-cream">
+            <label for="ice-cream">Black Rasbery Ice Cream</label><br>
+            <input type="radio" id="jaffaCakes" name="choice" value="jaffaCakes">
+            <label for="jaffaCakes">JaffaCakes</label><br>
+
+
+            <hr>
+
+            <input type="checkbox" id="gf-option" name="gf-option" value="gf-option">
+            <label for="gf-option">Gluten Free Goldfish (50&cent; extra)</label><br>
+
+
+
+
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Snacks</legend>
+
+            <input type="radio" id="chips" name="snack" value="chips">
+            <label for="chips">Salt and vinegar chips</label><br>
+
+            <input type="radio" id="grapes" name="snack" value="grapes">
+            <label for="grapes">Grapes</label><br>
+
+            <input type="radio" id="pretzel" name="snack" value="pretzel">
+            <label for="pretzel">Worlds biggest pretzel</label><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Drinks</legend>
+                <label for="drinks"></label>
+
+                <p> Feel free to choose from our soda or beer choice</p>
+
+                    <select name="drinks" id="drinks">
+                        <optgroup label="soda">
+                            <option>Ginger ale</option>
+                            <option>Coke Vanilla</option>
+                            <option>Sprite</option>
+                            <option>Coke</option>
+                            <option>Lemonade</option>
+                            <option>Root beer</option>
+                        </optgroup>
+
+                        <optgroup label="beer">
+                            <option>Bud light</option>
+                            <option>White Claw</option>
+                            <option>Modelo</option>
+                            <option>Shipyard Pumpkin ale</option>
+                            <option>Mikes Hard Lemonade</option>
+                        </optgroup>
+                        
+                        <br>
+                        <input type="checkbox" id="lg-drink" name="lg-drink" value="lg-drink">
+                        <label for="lg-drink">Large drink (25&cent; extra</label><br> 
+
+                </fieldset>
+
+                <p>
+                <button class="form-btn">Place Order</button>
+                <button class="form-btn">Reset Form</button>
+                </p>
+
+            </form>
+
+
+    
+</body>
+</html>

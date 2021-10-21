@@ -3,12 +3,36 @@
 body  {
     background-color: rgb(0, 211, 248);
 }
-
+li{
+    list-style-type: none;
+}
+.icon-row-1{
+    height: 45vh;
+    background-image:url(/img/photo-1575326595805-0be215978a71.jpg);
+    background-repeat: repeat-x;
+}
 #main-nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-variant-caps: all-small-caps;
 }
-
+#main-nav a:link {
+    color: darkred;
+    
+}
+#main-nav a:visited {
+    color: floralwhite;
+}
+#main-nav a:hover {
+    color: mediumblue;
+    background-color: navy;
+}
+header {
+    height: 80vh;
+    background-image:url(/img/photo-1602187956602-576d568cd959.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 h1 {
     font-size: 2rem;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;

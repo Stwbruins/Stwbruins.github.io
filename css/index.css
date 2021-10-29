@@ -1,4 +1,14 @@
+/* CSS reset */
+html {
+    box-sizing : border-box ;
+  }
 
+* ,
+* : before ,
+* : after {
+    box-sizing : inherit ;
+}
+ /* end of CSS reset */
 
 body  {
     background-color: rgb(0, 211, 248);

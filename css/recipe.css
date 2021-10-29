@@ -1,0 +1,46 @@
+/* CSS reset */
+html {
+    box-sizing : border-box ;
+  }
+
+* ,
+* : before ,
+* : after {
+    box-sizing : inherit ;
+}
+ /* end of CSS reset */
+
+body {
+    background-color: deepskyblue;
+}
+.navbar ul{
+    list-style: none;
+    background: local;
+    padding 0;
+    margin: 0;
+
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(0, 8, 15);
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 25;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+p.mix{
+    border-style: dotted dashed solid double;
+}
+h1 {
+    border-style: dashed;
+}
+h2 { 
+    border-style: groove;
+}

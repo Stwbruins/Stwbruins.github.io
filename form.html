@@ -12,7 +12,7 @@
 
     <p></p>
 
-    <table>
+    <table border="1">
       <thead>
           <tr>
           <th>Sunday</th>
@@ -24,16 +24,17 @@
           <th>Saturday</th>
       </tr>
     </thead>
+    
 
     <tbody>
         <tr>
-        <td>Closed</td>
+        <td bgcolor="red">Closed</td>
         <td>12:00-3:00Pm</td>
         <td>12:00-3:00Pm</td>
         <td>12:00-3:00Pm</td>
         <td>12:00-3:00Pm</td>
         <td>12:00-3:00Pm</td>
-        <td>Closed</td>
+        <td bgcolor=" red">Closed</td>
     </tr>
 
     <tr>
@@ -163,8 +164,10 @@
                 </fieldset>
 
                 <p>
-                <button class="form-btn">Place Order</button>
-                <button class="form-btn">Reset Form</button>
+                <button style="background-color: crimson;"
+                onclick="Alert(Order Placed)">Place Order</button>
+                <button style="background-color: rgb(241, 9, 55);"
+                onclick="Alert(Form Reset)">Reset form</button>
                 </p>
 
             </form>

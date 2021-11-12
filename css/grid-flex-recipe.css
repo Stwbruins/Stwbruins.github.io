@@ -1,0 +1,83 @@
+/* CSS reset */
+html {
+    box-sizing : border-box ;
+  }
+
+* ,
+* : before ,
+* : after {
+    box-sizing : inherit ;
+}
+ /* end of CSS reset */
+
+body {
+    background-color: deepskyblue;
+}
+.navbar ul{
+    list-style: none;
+    background: local;
+    padding 0;
+    margin: 0;
+
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(0, 8, 15);
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 25;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+p.mix{
+    border-style: dotted dashed solid double;
+}
+h1 {
+    border-style: dashed;
+}
+h2 { 
+    border-style: groove;
+}
+.box {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "specs image image image supplies"
+    " instructions instructions instructions directions directions"
+    "nutrition nutrition nutrition video video"
+    "footer footer footer footer footer";
+}
+.row1-center {
+    grid-area: header;
+    margin-bottom: 20px;
+}
+.row2-center{
+    grid-area: image;
+    padding-bottom: 20px;
+}
+
+.row2-left{
+    grid-area: specs;
+    padding-left: 15px;
+}
+.row2-right{
+    grid-area: supplies;
+    padding-right: 45px;
+    
+
+}
+.row3-center{
+    grid-area: instructions;
+    padding-bottom: 20px;
+
+}
+.row3-right{
+    grid-area: directions;
+    padding-right: 10px;
+}

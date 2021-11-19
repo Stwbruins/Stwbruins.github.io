@@ -81,3 +81,31 @@ h2 {
     grid-area: directions;
     padding-right: 10px;
 }
+
+@media ( max-width:500px ){
+
+    body {
+        font-size: 1rem;
+    }
+
+    .box {
+        display:block;
+        width: 75%;
+
+    }
+    img {
+        border: cyan;
+        max-width: 70%;
+    }
+    p {
+        margin: 0%;
+
+    }
+    ul {
+        padding-top: 0%;
+    }
+    [class^=row] {
+        padding: 0px;
+        margin-top: 0;
+    }
+}
